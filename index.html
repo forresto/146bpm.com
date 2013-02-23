@@ -4,11 +4,43 @@
     <title>vine loops drum machine - 146bpm.com</title>
     <style type="text/css">
       body {
-        background-color:#FDFDFA; 
-        color:#62504C; 
-        font-family: Georgia; 
-        font-size:0.9em;
+
+        background-image: linear-gradient(left top, rgb(232,148,148) 10%, rgb(255,181,253) 15%, rgb(217,219,255) 25%, rgb(127,199,193) 54%, rgb(110,173,97) 84%, rgb(255,255,181) 100%);
+        background-image: -o-linear-gradient(left top, rgb(232,148,148) 10%, rgb(255,181,253) 15%, rgb(217,219,255) 25%, rgb(127,199,193) 54%, rgb(110,173,97) 84%, rgb(255,255,181) 100%);
+        background-image: -moz-linear-gradient(left top, rgb(232,148,148) 10%, rgb(255,181,253) 15%, rgb(217,219,255) 25%, rgb(127,199,193) 54%, rgb(110,173,97) 84%, rgb(255,255,181) 100%);
+        background-image: -webkit-linear-gradient(left top, rgb(232,148,148) 10%, rgb(255,181,253) 15%, rgb(217,219,255) 25%, rgb(127,199,193) 54%, rgb(110,173,97) 84%, rgb(255,255,181) 100%);
+        background-image: -ms-linear-gradient(left top, rgb(232,148,148) 10%, rgb(255,181,253) 15%, rgb(217,219,255) 25%, rgb(127,199,193) 54%, rgb(110,173,97) 84%, rgb(255,255,181) 100%);
+
+        background-image: -webkit-gradient(
+          linear,
+          left top,
+          right bottom,
+          color-stop(0.1, rgb(232,148,148)),
+          color-stop(0.15, rgb(255,181,253)),
+          color-stop(0.25, rgb(217,219,255)),
+          color-stop(0.54, rgb(127,199,193)),
+          color-stop(0.84, rgb(110,173,97)),
+          color-stop(1, rgb(255,255,181))
+        );
+
+        color: #519999; 
+        font-family: Helvetica, Verdana; 
+        font-weight: 100;
+        font-size: 1em;
         margin: 0;
+        padding: 0.5em;
+      }
+      #main {
+        background-color: rgba(255,255,255,0.75);
+        border-radius: 0.5em;
+        min-width: 775px;
+        max-width: 875px;
+        margin: 0 auto;
+        padding: 0.5em;
+      }
+      a {
+        color: #417a7a; 
+        text-decoration: underline;
       }
       #loops {
         width: 755px;
@@ -29,35 +61,50 @@
   </head>
   <body>
 
-    <div id="loops">
+    <div id="main">
+
+      <div id="loops">
+      </div>
+      
+      <footer>
+        <p>
+          Unmute the loops, click to pause and play, make some polyrhythm. 
+        </p>
+        <p>
+          Want to add your loop to the mix? Use <a href="https://vine.co/v/bgmipi1IYXi">this Vine</a> for <span title="416.875ms beat">rhythm</span> and tweet your vine.co link to <a href="https://twitter.com/intent/tweet?text=Hey%20%40forresto%20add%20my%20%23146bpm%20loop%20to%20http%3A%2F%2F146bpm.com%2F%20%3A-)">#146bpm @forresto</a>.
+        </p>
+        <p>
+          Vine feature requests: <br />
+          webM version for Firefox <br />
+          autoload off option for /card embeds <br />
+          easy way to embed &lt;video&gt; for more sync and control <br />
+          easier way to get link from app <br />
+          web profile page with post listing
+        </p>
+        <p>
+          Made in the spirit of <a href="http://inbflat.net/">In B Flat</a>.
+        </p>
+        <p>
+          Each video &copy; the respective artist; HTML by Forrest Oliphant; <a href="https://github.com/forresto/146bpm.com">Project page</a>
+        </p>
+      </footer>
+
     </div>
-    
-    <footer>
-      <p>
-        Unmute the loops, click to pause and play, make some polyrhythm. Want to add your loop to the mix? Use <a href="https://vine.co/v/bgmipi1IYXi">this Vine</a> for <span title="416.875ms beat">rhythm</span> and tweet your link to <a href="https://twitter.com/intent/tweet?text=%23146bpm%20@forresto%20">#146bpm @forresto</a>.
-      </p>
-      <p>
-        Vine feature requests: WebM version for Firefox, easy way to embed &lt;video&gt; for more syncing and control, easier way to get link from app...
-      </p>
-      <p>
-        <a href="https://github.com/forresto/146bpm.com">Source</a>
-      </p>
-    </footer>
 
 
     <script type="text/javascript">
       document.addEventListener('DOMContentLoaded', function() {
         // The list of possible videos to load
         var loops = [
-          {id:"bgmipi1IYXi", title:"metronome", artist:"forresto"},
-          {id:"bgmipi1IYXi", title:"metronome", artist:"forresto"},
-          {id:"bgmipi1IYXi", title:"metronome", artist:"forresto"},
-          {id:"bgmipi1IYXi", title:"metronome", artist:"forresto"},
-          {id:"bgmipi1IYXi", title:"metronome", artist:"forresto"},
-          {id:"bgmipi1IYXi", title:"metronome", artist:"forresto"},
-          {id:"bgmipi1IYXi", title:"metronome", artist:"forresto"},
-          {id:"bgmipi1IYXi", title:"metronome", artist:"forresto"},
-          {id:"bgmipi1IYXi", title:"metronome", artist:"forresto"}
+          {id:"bgKV2u9MuQi", title:"ball", artist:"forresto"},
+          {id:"bgKV2u9MuQi", title:"ball", artist:"forresto"},
+          {id:"bgKV2u9MuQi", title:"ball", artist:"forresto"},
+          {id:"bgK90b0v6eJ", title:"necklace", artist:"forresto"},
+          {id:"bgK90b0v6eJ", title:"necklace", artist:"forresto"},
+          {id:"bgK90b0v6eJ", title:"necklace", artist:"forresto"},
+          {id:"bgK9aYT1gQQ", title:"snap", artist:"forresto"},
+          {id:"bgK9aYT1gQQ", title:"snap", artist:"forresto"},
+          {id:"bgK9aYT1gQQ", title:"snap", artist:"forresto"}
         ];
 
         // Randomize the list
