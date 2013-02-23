@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>vine loops drum machine - 146bpm.com</title>
+    <style type="text/css">
+      body {
+        background-color:#FDFDFA; 
+        color:#62504C; 
+        font-family: Georgia; 
+        font-size:0.9em;
+        margin: 0;
+      }
+      #loops {
+        width: 755px;
+        margin: 0 auto;
+      }
+      iframe {
+        border: none;
+        float: left;
+        width: 250px;
+        height: 250px;
+      }
+      footer {
+        padding-top: 0.5em;
+        clear: both;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div id="loops">
+    </div>
+    
+    <footer>
+      <p>
+        Unmute the loops, click to pause and play, make some polyrhythm. Want to add your loop to the mix? Use <a href="https://vine.co/v/bgmipi1IYXi">this Vine</a> for <span title="416.875ms beat">rhythm</span> and tweet your link to <a href="https://twitter.com/intent/tweet?text=%23146bpm%20@forresto%20">#146bpm @forresto</a>.
+      </p>
+      <p>
+        Vine feature requests: WebM version for Firefox, easy way to embed &lt;video&gt; for more syncing and control, easier way to get link from app...
+      </p>
+      <p>
+        <a href="https://github.com/forresto/146bpm.com">Source</a>
+      </p>
+    </footer>
+
+
+    <script type="text/javascript">
+      document.addEventListener('DOMContentLoaded', function() {
+        // The list of possible videos to load
+        var loops = [
+          {id:"bgmipi1IYXi", title:"metronome", artist:"forresto"},
+          {id:"bgmipi1IYXi", title:"metronome", artist:"forresto"},
+          {id:"bgmipi1IYXi", title:"metronome", artist:"forresto"},
+          {id:"bgmipi1IYXi", title:"metronome", artist:"forresto"},
+          {id:"bgmipi1IYXi", title:"metronome", artist:"forresto"},
+          {id:"bgmipi1IYXi", title:"metronome", artist:"forresto"},
+          {id:"bgmipi1IYXi", title:"metronome", artist:"forresto"},
+          {id:"bgmipi1IYXi", title:"metronome", artist:"forresto"},
+          {id:"bgmipi1IYXi", title:"metronome", artist:"forresto"}
+        ];
+
+        // Randomize the list
+        loops.sort(function(){return 0.5-Math.random();});
+
+        var container = document.getElementById("loops");
+
+        // Load the first 9
+        for (var i=0; i<9; i++) {
+          // <iframe src="https://vine.co/v/br2qHETZOw0/card" width="200" height="200" frameborder="0"></iframe>
+          var loop = loops[i];
+          var frame = document.createElement("iframe");
+          frame.src = "https://vine.co/v/"+loop.id+"/card";
+          container.appendChild(frame);
+        }
+
+      });
+    </script>
+
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-274009-19']);
+      _gaq.push(['_trackPageview']);
+      
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>
+
+
